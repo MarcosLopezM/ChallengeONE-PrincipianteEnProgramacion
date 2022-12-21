@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="/alura.svg" />
     <title>Codificador - Oracle ONE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
-            <img src="alura.svg" alt="Alura LATAM logo">
+            <img src="alura.svg" alt="Alura LATAM logo" class="nav__logo">
         </nav>
     </header>
     <main>
-        <section>
-            <label><input type="text" placeholder="Ingrese el texto aquí"></label>
+        <section class="enconder">
+            <textarea placeholder="Ingrese el texto aquí" class="encoder__message"></textarea>
             <p>Solo letras minúsculas y sin caracteres especiales</p>
             
             <div>
