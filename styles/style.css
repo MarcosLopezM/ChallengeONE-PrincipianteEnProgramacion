@@ -9,7 +9,7 @@ nav {
     margin: 15px;
 }
 
-.enconder {
+.encoder {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,4 +78,21 @@ nav {
 
 .decode {
     border: 1px solid #0A3871;
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 90vw;
+    margin: 30px 24px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 24px;
+}
+
+.display > h2, .display > p {
+    text-align: center;
 }
