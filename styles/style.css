@@ -1,5 +1,6 @@
 body {
     background-color: #F3F5FC;
+    font-family: 'Inter', sans-serif;
 }
 
 nav {
@@ -24,13 +25,57 @@ nav {
     color: #0A3871;
     padding: 20px;
     box-shadow: 0px 0px 11px 1px #00000024;
-    border-radius:	4px;
+    border-radius:	10px;
     border: none;
 }
 
 .encoder__message::placeholder {
     color: #0A3871;
     font-weight: 400;
-    font-family: 'Inter', sans-serif;
     text-align: top;
+}
+
+.encoder__warning {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 10px;
+    gap: 8px;
+    width: 90vw;
+}
+
+.alert {
+    width: 20px;
+    height: 20px;
+}
+
+.warning {
+    color: #495057;
+    font-size: 0.75em;
+}
+
+.encoder__btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.encoder__btns > button {
+    padding: 1em;
+    border-radius: 24px;
+    width: 90vw;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.encode {
+    color: #ffffff;
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+}
+
+.decode {
+    border: 1px solid #0A3871;
 }

@@ -19,11 +19,15 @@
     <main>
         <section class="enconder">
             <textarea placeholder="Ingrese el texto aquí" class="encoder__message"></textarea>
-            <p>Solo letras minúsculas y sin caracteres especiales</p>
+
+            <div class="encoder__warning">
+                <img src="alert.svg" alt="alert icon" class="alert">
+                <p class="warning">Solo letras minúsculas y sin caracteres especiales</p>
+            </div>
             
-            <div>
-                <button type="button">Codificar</button>
-                <button type="button">Decodificar</button>
+            <div class="encoder__btns">
+                <button type="button" class="encode">Codificar</button>
+                <button type="button" class="decode">Decodificar</button>
             </div>
         </section>
 
