@@ -35,6 +35,11 @@ nav {
     text-align: top;
 }
 
+.encoder__message:focus {
+    border: 2px solid #0A3871;
+    outline: white;
+}
+
 .encoder__warning {
     display: flex;
     flex-direction: row;
