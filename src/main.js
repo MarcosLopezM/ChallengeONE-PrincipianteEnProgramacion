@@ -35,10 +35,10 @@ const showEncodeMessage = () => {
 }
 
 const showDecodeMessage = () => {
-    const targetMessage = document.querySelector('.encoder__message').value
-    const sectionMessage = document.querySelector('.display')
-  
-    sectionMessage.innerHTML = `
+  const targetMessage = document.querySelector('.encoder__message').value
+  const sectionMessage = document.querySelector('.display')
+
+  sectionMessage.innerHTML = `
           <p style='${displayTxtStyle}'>${decode(targetMessage)}</p>
       `
 }
