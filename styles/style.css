@@ -132,6 +132,7 @@ main {
         display: flex;
         flex-direction: row;
         width: 80vw;
+        gap: 1rem;
     }
 
 
@@ -152,8 +153,16 @@ main {
     }
 
     .display {
-        width: 40vw;
-        margin: 0 24px;
+        width: 20vw;
+        margin: 0;
+        padding: 2rem 1rem;
+    }
+    
+    .display-show {
+        padding: 2rem 2.5rem;
+        justify-content: flex-start; 
+        align-items: flex-start;
+        color: #0A3871;
     }
 
     .display__txt {

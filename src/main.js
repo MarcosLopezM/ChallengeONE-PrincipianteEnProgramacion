@@ -3,7 +3,7 @@ import '../styles/style.css'
 const LETTERS = ['e', 'i', 'a', 'o', 'u']
 const ENCODING = ['enter', 'imes', 'ai', 'ober', 'ufat']
 const letterLength = LETTERS.length
-const displayTxtStyle = 'font-size:1.5em;'
+const displayTxtStyle = 'font-size:1.3em; color: #0A3871'
 
 const encode = (message) => {
   let encodeMessage = message
@@ -29,6 +29,8 @@ const showEncodeMessage = () => {
   const targetMessage = document.querySelector('.encoder__message').value
   const sectionMessage = document.querySelector('.display')
 
+  document.querySelector('.display').classList.add('display-show')
+
   sectionMessage.innerHTML = `
         <p style='${displayTxtStyle}'>${encode(targetMessage)}</p>
     `
@@ -37,6 +39,8 @@ const showEncodeMessage = () => {
 const showDecodeMessage = () => {
   const targetMessage = document.querySelector('.encoder__message').value
   const sectionMessage = document.querySelector('.display')
+
+  document.querySelector('.display').classList.add('display-show')
 
   sectionMessage.innerHTML = `
           <p style='${displayTxtStyle}'>${decode(targetMessage)}</p>
