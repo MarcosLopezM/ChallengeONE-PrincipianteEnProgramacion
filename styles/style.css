@@ -3,10 +3,14 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-nav {
+header {
     width: 100%;
     padding: 0 0 0 20px;
     margin: 15px;
+}
+
+main {
+    margin: 2em 0;
 }
 
 .encoder {
@@ -111,17 +115,25 @@ nav {
     color: #495057;
 }
 
-@media screen and (min-width: 821px) {
+@media screen and (min-width: 900px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header {
+        width: 80vw;
+        margin: 0;
+    }
+    
     main {
         display: flex;
         flex-direction: row;
-        margin: 10em 40px;
-        height: 60vh;
+        width: 80vw;
     }
 
-    nav {
-        margin: 40px 0 0 40px;
-    }
 
     .encoder__message {
         width: 60vw;
@@ -151,6 +163,6 @@ nav {
 
     .display__img {
         display: block;
-        width: 80%;
+        width: 200px;
     }
 }
