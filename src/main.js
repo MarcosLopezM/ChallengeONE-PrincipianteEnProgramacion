@@ -3,7 +3,7 @@ import '../styles/style.css'
 const LETTERS = ['e', 'i', 'a', 'o', 'u']
 const ENCODING = ['enter', 'imes', 'ai', 'ober', 'ufat']
 const letterLength = LETTERS.length
-const displayTxtStyle = 'font-size:1.3em; color: #0A3871; width: 400px'
+const displayTxtStyle = 'font-size:1.2em; color: #0A3871; width: 400px'
 
 const encode = (message) => {
   let encodeMessage = message
